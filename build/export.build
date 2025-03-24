@@ -1,0 +1,6 @@
+$out_root/
+{
+  include art/uri/
+}
+
+export $out_root/art/uri/$import.target

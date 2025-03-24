@@ -1,0 +1,6 @@
+: 1
+summary: libart-uri project repository
+
+:
+role: prerequisite
+location: https://code.helloryan.se/art/libart-validation.git##HEAD

@@ -1,0 +1,6 @@
+libs =
+
+import libs =+ libart-validation%lib{art-validation}
+import libs =+ libart-uri%lib{art-uri}
+
+./: exe{driver}: {hxx ixx txx cxx}{**} $libs

@@ -1,0 +1,37 @@
+#ifndef art__uri__version_hxx_
+#define art__uri__version_hxx_
+
+// The numeric version format is AAAAABBBBBCCCCCDDDE where:
+//
+// AAAAA - major version number
+// BBBBB - minor version number
+// CCCCC - bugfix version number
+// DDD   - alpha / beta (DDD + 500) version number
+// E     - final (0) / snapshot (1)
+//
+// When DDDE is not 0, 1 is subtracted from AAAAABBBBBCCCCC. For example:
+//
+// Version      AAAAABBBBBCCCCCDDDE
+//
+// 0.1.0        0000000001000000000
+// 0.1.2        0000000001000020000
+// 1.2.3        0000100002000030000
+// 2.2.0-a.1    0000200001999990010
+// 3.0.0-b.2    0000299999999995020
+// 2.2.0-a.1.z  0000200001999990011
+//
+#define LIBART_URI_VERSION       $libart_uri.version.project_number$ULL
+#define LIBART_URI_VERSION_STR   "$libart_uri.version.project$"
+#define LIBART_URI_VERSION_ID    "$libart_uri.version.project_id$"
+#define LIBART_URI_VERSION_FULL  "$libart_uri.version$"
+
+#define LIBART_URI_VERSION_MAJOR $libart_uri.version.major$
+#define LIBART_URI_VERSION_MINOR $libart_uri.version.minor$
+#define LIBART_URI_VERSION_PATCH $libart_uri.version.patch$
+
+#define LIBART_URI_PRE_RELEASE   $libart_uri.version.pre_release$
+
+#define LIBART_URI_SNAPSHOT_SN   $libart_uri.version.snapshot_sn$ULL
+#define LIBART_URI_SNAPSHOT_ID   "$libart_uri.version.snapshot_id$"
+
+#endif
